@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Зв'яжіться зі мною через форму зворотного зв'язку.">
+    <title>Контакти</title>
+    
+    <!-- Правильне підключення стилів -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="about.html">Про мене</a></li>
+                    <li><a href="contact.html" class="active">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Контакти</h1>
+        <h2>Зв'яжіться зі мною</h2>
+
+        <div class="card">
+            <form action="#" method="get">
+                <p>
+                    <label for="name">Ім’я (обов’язково):</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+                </p>
+
+                <p>
+                    <label for="email">Email (обов’язково):</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+
+                <p>
+                    <label for="topic">Тема звернення:</label>
+                    <select id="topic" name="topic">
+                        <option value="study">Навчання</option>
+                        <option value="work">Співпраця</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </p>
+
+                <fieldset>
+                    <legend>Зручний спосіб зв’язку</legend>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="contactWay" value="email" checked>
+                            Email
+                        </label>
+                        <label>
+                            <input type="radio" name="contactWay" value="phone">
+                            Телефон
+                        </label>
+                    </div>
+                </fieldset>
+
+                <p>
+                    <label for="message">Повідомлення:</label><br>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="agree" required>
+                        Погоджуюсь з правилами обробки даних
+                    </label>
+                </p>
+
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Михайлюк Валентин</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* =============================================
+   responsive.css — Адаптивність
+   ============================================= */
+
+   @media (max-width: 992px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    
+    .card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Навігація стає вертикальною */
+    .nav-list {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    .site-header {
+        padding: 1rem 0;
+    }
+
+    main {
+        padding: 25px 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .card {
+        padding: 1.8rem;
+        margin: 1.5rem 0;
+    }
+
+    /* Форма */
+    .radio-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    form button {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    /* Медіа */
+    video, audio {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    table {
+        font-size: 0.95rem;
+    }
+
+    th, td {
+        padding: 10px 8px;
+    }
+}
+
+/* Додаткові покращення для мобільних */
+@media (max-width: 768px) {
+    .site-header .container {
+        padding: 0 15px;
+    }
+}

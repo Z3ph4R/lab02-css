@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Мій перший HTML-сайт. Практична робота №2 - CSS оформлення.">
+    <title>Мій перший HTML-сайт</title>
+    
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Головна</a></li>
+                    <li><a href="pages/about.html">Про мене</a></li>
+                    <li><a href="pages/contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Мій перший HTML-сайт</h1>
+        <p>Ласкаво просимо! Це практична робота №1, де я демонструю базові можливості <strong>HTML5</strong>.</p>
+        
+        <h2>Що я вивчив</h2>
+        <p>На цьому занятті я закріпив структуру документа, семантичні теги, роботу з формами та медіа.</p>
+
+        <h2>Мої навички</h2>
+        <ul>
+            <li>HTML5 та семантика</li>
+            <li>Створення форм</li>
+            <li>Вбудовування медіа</li>
+            <li>Таблиці та списки</li>
+        </ul>
+
+        <h2>Розклад навчання</h2>
+        <ol>
+            <li>Понеділок — HTML/CSS</li>
+            <li>Середа — JavaScript</li>
+            <li>П'ятниця — React</li>
+        </ol>
+
+        <figure>
+            <img src="assets/img/me.jpg" alt="Краєвид на комп'ютерну техніку">
+            <figcaption>Моє робоче місце</figcaption>
+        </figure>
+
+        <table>
+            <caption>Прайс моїх послуг</caption>
+            <thead>
+                <tr>
+                    <th>Послуга</th>
+                    <th>Ціна</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Landing Page</td><td>від 5000 грн</td></tr>
+                <tr><td>Корпоративний сайт</td><td>від 12000 грн</td></tr>
+                <tr><td>Консультація</td><td>800 грн/год</td></tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Михайлюк Валентин. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
